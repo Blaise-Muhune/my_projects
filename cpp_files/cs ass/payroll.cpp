@@ -1,3 +1,7 @@
+//Date: 10/31/2023
+//Class: CPTR-151
+//Name: Blaise Muhune
+//Description: this program calculate the payroll
 #include <iostream>
 #include <iomanip>
 
@@ -16,8 +20,8 @@ double calcNetPay(double grossPay) {
 void printPayCheck(double netPay) {
     std::cout << "--------------------------" << std::endl;
     std::cout << "Paycheck" << std::endl;
-    std::cout << "Gross Pay: $" << std::fixed << std::setprecision(2) << netPay / 0.75 << std::endl; // Calculate gross pay from net pay
-    std::cout << "Tax (25%): $" << std::fixed << std::setprecision(2) << netPay - (netPay / 0.75) << std::endl; // Calculate tax amount
+    std::cout << "Gross Pay: $" << std::fixed << std::setprecision(2) << netPay / 0.75 << std::endl; 
+    std::cout << "Tax (25%): $" << std::fixed << std::setprecision(2) << netPay - (netPay / 0.75) << std::endl;
     std::cout << "Net Pay: $" << std::fixed << std::setprecision(2) << netPay << std::endl;
     std::cout << "--------------------------" << std::endl;
 }
