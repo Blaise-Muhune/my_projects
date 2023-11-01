@@ -23,18 +23,20 @@ void printPayCheck(double netPay) {
 }
 
 int main() {
+
+    // declare
     char processMore;
     
     do {
         double hoursWorked, payRate;
         
-        // Input hours worked and pay rate
+        // Input info
         std::cout << "Enter hours worked: ";
         std::cin >> hoursWorked;
         std::cout << "Enter pay rate: $";
         std::cin >> payRate;
         
-        // Calculate gross pay
+        // process
         double grossPay = calcGrossPay(hoursWorked, payRate);
         
         // Calculate net pay
@@ -43,7 +45,7 @@ int main() {
         // Print the paycheck
         printPayCheck(netPay);
         
-        // Ask if there are more paychecks to process
+        // more input
         std::cout << "Process another paycheck? (Y/N): ";
         std::cin >> processMore;
     } while (processMore == 'Y' || processMore == 'y');
